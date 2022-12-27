@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shubham Thorat</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon (1).ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:ital@0;1&family=Sacramento&display=swap" rel="stylesheet">
+
+    <style>
+      body {
+        font-family: "Lato", sans-serif;
+      }
+      
+      .sidebar {
+        height: 50%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: beige;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    
+      }
+      
+      .sidebar a {
+        padding: 8px 8px 8px 15px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #11999E;
+        display: block;
+        transition: 0.3s;
+      }
+      
+      .sidebar a:hover {
+        color: #11999E;
+      }
+      
+      .sidebar .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 10px;
+      }
+      
+      .openbtn {
+        font-size: 20px;
+        cursor: pointer;
+        background-color: skyblue;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+      }
+      
+      .openbtn:hover {
+        background-color: #0f7b16;
+      }
+      
+      #main {
+        transition: margin-left .5s;
+        padding: 16px;
+      }
+      
+      /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+      @media screen and (max-height: 450px) {
+        .sidebar {padding-top: 15px;}
+        .sidebar a {font-size: 18px;}
+      }
+      </style>
+  
+<!-- Load an icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  </head>
+<body>
+    <div class="top-container">
+
+      <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="#main"><i class="fa fa-fw fa-address-card"></i> About</a>
+        <a href="#skills"><i class="fa fa-fw fa-regular fa-code"></i>Skills</a>
+        <a href="#project"><i class="fa fa-fw fa-sharp fa-solid fa-globe"></i>Project</a>
+        <a href="#experience"><i class="fa fa-fw fa-solid fa-address-book"></i>Experience</a>
+        <a href="#contact"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+      </div>
+      
+      <div id="main">
+        <button class="openbtn" onclick="openNav()">☰ Open Menu</button>  
+      </div>
+      
+      <script>
+      function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+      }
+      </script>
+         
+
+        <img class="top-cloud" src="images/cloud.png" alt="cloud-img">
+        <h1>I'm Shubham</h1>
+         <h2> <p class="Home">a <span class="pro">pro</span>grammer.</p></h2>
+        <img class="bottom-cloud" src="images/cloud.png" alt="cloud-img">
+        <img  class="mountain" src="images/mountain.png" alt="cloud-img">
+    </div> 
+ 
+    <div class="middle-container">
+        <div class="profile">
+          <img class="Profile" src="images/profile-pic (1).png" alt="Shubham profile picture">
+          <h2>Hey Folks,</h2>
+          <p class="intro">Building a succesful product is a challenge. I am highly energetic in building web interfaces and front end development with passionate programmer .</p>
+        </div>
+        <hr>
+
+        <div class="skills" id="skills">
+          <h2>My Skills</h2>
+          <div class="skill-row">
+
+            <img class="Develop" src="images/develop.png" alt="Development icon">
+            <h3>Design and Development</h3>
+            <p>HTML5 | CSS3 | Bootstrap5 | Javascript ES5&ES6 | ReactJS v17 | WordPress</p>
+          </div>
+
+          <div class="skill-row">
+            <h3>Programmer</h3>
+            <p>Python | Java | Machine-Learning</p>
+          </div>
+        </div>
+        <hr>
+
+        <div class="My Project" id="project">
+         <h2>My Projects</h2>
+
+        <div class="project-row">
+          <h3>1.Drum Kit - A Musical App </h3>
+          <p class="project1">Reducing anxiety & depression,induces deep relaxation |made with html,css,js</p>
+          <a class="project" href="https://shubhamthorat667.github.io/DrumKit/">Go Live🌐</a>
+        </div>
+
+        <div class="project-row">
+          <h3>2.BookGanga - online Bookstore website </h3>
+          <p class="project1">frontend part of e-commerce based Book store App,main purpose is to supply thoughtful and unique books </p>
+          <a class="project" href="https://shubhamthorat667.github.io/BookGanga/">Go Live🌐</a>
+        </div>
+
+        <div class="project-row">
+          <h3>3.TinDog - Dog Mitup Portal </h3>
+          <p class="project1">Complete Responsive portal of dog care company designed through html, css and Bootstrap</p>
+          <a class="project" href="https://shubhamthorat667.github.io/TinDog/">Go Live🌐</a>
+      </div>
+          
+    </div>
+  </div>
+      <hr>
+
+        <div class="My Experience" id="experience">
+            <h2>My Experience</h2>
+            <h3>Accenture Virtual Internship 2022</h3>
+            <p>Python|Requirement Analysis|Design|Testing </p>
+            <a class="certification" href="certification.html">Certifications📃</a>
+          </div>
+        </div>
+    
+        
+        <hr>
+        <div class="contact-me">
+          <h2>Get In Touch</h2>
+          <h3>Don't be a stranger just say hello</h3>
+          <p class="contact-message">Feel free to get in touch with me. I am always open to discussing new ideas or oppurtunities and to a part of your vision.</p>
+          <a class="btn" href="mailto:shubhamthorat667@email.com">CONTACT ME</a>
+        </div>
+      </div>
+      
+      <br>
+      <br>
+      <br>
+      <div class="bottom-container" id="contact">
+        <a class="footer-hover" class="footer-hover" class="footer-link" href="https://www.linkedin.com/in/shubham-thorat-21122b249">LinkedIn</a>
+        <a class="footer-hover" class="footer-link" href="https://twitter.com/Shubham91141552">Twitter</a>
+        <a class="footer-hover" class="footer-link" href="https://github.com/Shubhamthorat667">GitHub</a>
+        <p class="copyright">© 2022 Shubham Thorat.</p>
+      </div>
+      
+   
+</body>
+</html>
